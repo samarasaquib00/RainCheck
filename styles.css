@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 20px;
+}
+
+h2 {
+    text-transform: capitalize;
+}
+
+
+.search-bar {
+    display: flex;
+    height: 30px;
+    width: 518px;
+    align-items: center;
+    margin: 5px;
+}
+
+.today-container {
+    width: 96.4%; /* Make the today container half its size horizontally */
+    height: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px; /* Add margin to separate from other weather info */
+    background-size: cover; /* Make the background image cover the entire container */
+    background-position: center; /* Center the background image */
+
+    display: flex;
+    justify-content: space-between; /* Evenly distribute space between columns */
+    align-items: center; /* Vertically center items in the container */
+}
+
+.left-column,
+.right-column {
+    flex: 1; /* Equal width for both columns */
+}
+
+.left-column {
+    text-align: center; /* Align content in the left column to the left */
+    padding: 50px; /* Add padding for spacing */
+}
+
+.right-column {
+    text-align: center; /* Align content in the right column to the right */
+    padding: 100px; /* Add padding for spacing */
+    font-weight: bold;
+}
+
+
+.weather-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    justify-content: flex-start; /* Align items to the start of the container */
+}
+
+.day-container {
+    flex: 1 0 calc(20% - 10px); /* Each day container takes up 20% of the container width */
+    /* 1 0 calc(20% - 10px) means flex-grow: 1, flex-shrink: 0, flex-basis: calc(20% - 10px) */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin-right: 10px; /* Add margin between each day container */
+    margin-bottom: 10px; /* Add margin to separate rows */
+
+}
+
+
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: lightskyblue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}

@@ -1,0 +1,1 @@
+Generate an API key here: https://openweathermap.org/api
