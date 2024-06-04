@@ -17,6 +17,14 @@ searchButton.addEventListener('click', () => {
     }
 });
 
+// Enter key event listener
+locationInput.addEventListener('keydown', (event) => {
+    const location = locationInput.value;
+    if (event.key === 'Enter') {
+        fetchWeatherForecast(location);
+    }
+});
+
 // Fetch weather information through API call 
 function fetchWeatherForecast(location) {
     const url = `${apiUrl}?q=${location}&appid=${apiKey}&units=imperial&cnt=${daysToShow * 8}`; // Fetch forecast for multiple days
